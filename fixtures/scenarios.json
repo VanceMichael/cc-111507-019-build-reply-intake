@@ -1,0 +1,66 @@
+[
+  {
+    "id": "standard",
+    "entry": "index-2026-11-15T00-00-00.json",
+    "version": "source-v1",
+    "resources": [
+      "index-2026-11-15T00-00-00.json",
+      "codemodel-a.json",
+      "target-debug.json",
+      "target-release.json",
+      "stale.json",
+      "index-2026-11-15T00-00-01.json",
+      "codemodel-b.json"
+    ],
+    "behavior": "standard",
+    "description": "发布构建资料接口：standard"
+  },
+  {
+    "id": "missing-target",
+    "entry": "index-2026-11-15T00-00-00.json",
+    "version": "source-v1",
+    "resources": [
+      "index-2026-11-15T00-00-00.json",
+      "codemodel-a.json",
+      "target-debug.json",
+      "target-release.json",
+      "stale.json",
+      "index-2026-11-15T00-00-01.json",
+      "codemodel-b.json"
+    ],
+    "behavior": "missing-target",
+    "description": "发布构建资料接口：missing-target"
+  },
+  {
+    "id": "changed-index",
+    "entry": "index-2026-11-15T00-00-00.json",
+    "version": "source-v1",
+    "resources": [
+      "index-2026-11-15T00-00-00.json",
+      "codemodel-a.json",
+      "target-debug.json",
+      "target-release.json",
+      "stale.json",
+      "index-2026-11-15T00-00-01.json",
+      "codemodel-b.json"
+    ],
+    "behavior": "changed-index",
+    "description": "发布构建资料接口：changed-index"
+  },
+  {
+    "id": "client-error",
+    "entry": "index-2026-11-15T00-00-00.json",
+    "version": "source-v1",
+    "resources": [
+      "index-2026-11-15T00-00-00.json",
+      "codemodel-a.json",
+      "target-debug.json",
+      "target-release.json",
+      "stale.json",
+      "index-2026-11-15T00-00-01.json",
+      "codemodel-b.json"
+    ],
+    "behavior": "client-error",
+    "description": "发布构建资料接口：client-error"
+  }
+]

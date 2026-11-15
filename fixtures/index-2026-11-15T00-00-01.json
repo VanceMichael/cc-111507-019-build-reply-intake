@@ -1,0 +1,1 @@
+{"cmake": {"version": {"major": 3, "minor": 31}}, "reply": {"client-release": {"query.json": {"requests": [{"kind": "codemodel", "version": {"major": 2}}], "responses": [{"kind": "codemodel", "version": {"major": 2, "minor": 7}, "jsonFile": "codemodel-b.json"}]}}}, "objects": [{"kind": "codemodel", "jsonFile": "stale.json"}]}

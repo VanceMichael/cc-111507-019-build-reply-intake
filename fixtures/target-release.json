@@ -1,0 +1,48 @@
+{
+  "id": "app::a",
+  "name": "app",
+  "type": "EXECUTABLE",
+  "paths": {
+    "source": ".",
+    "build": "."
+  },
+  "sources": [
+    {
+      "path": "src/main.c",
+      "compileGroupIndex": 0,
+      "sourceGroupIndex": 0
+    },
+    {
+      "path": "generated/release.h",
+      "isGenerated": true,
+      "sourceGroupIndex": 1
+    }
+  ],
+  "sourceGroups": [
+    {
+      "name": "Sources",
+      "sourceIndexes": [
+        0
+      ]
+    },
+    {
+      "name": "Generated",
+      "sourceIndexes": [
+        1
+      ]
+    }
+  ],
+  "compileGroups": [
+    {
+      "language": "C",
+      "sourceIndexes": [
+        0
+      ],
+      "compileCommandFragments": [
+        {
+          "fragment": "-DRELEASE"
+        }
+      ]
+    }
+  ]
+}
