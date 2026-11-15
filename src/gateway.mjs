@@ -49,7 +49,7 @@ export async function createGateway(scenario = 'standard') {
       if (url.pathname === '/manifest') return send(descriptor);
       if (url.pathname === '/trace') return send(trace.slice(0, -1));
       if (url.pathname.startsWith('/files/')) return file(decodeURIComponent(url.pathname.slice(7)));
-      if (url.pathname === '/build/index') return send({ index: scenario === 'changed-index' && counts['/build/index'] > 1 ? 'index-2026-11-15T00-00-01.json' : spec.entry });
+      if (url.pathname === '/build/index') return send({ index: scenario === 'changed-index' && trace.some(item => item.path === '/build/reply/codemodel-a.json') ? 'index-2026-11-15T00-00-01.json' : spec.entry });
       if (url.pathname.startsWith('/build/reply/')) {
         if (scenario === 'client-error' && url.pathname.endsWith(spec.entry)) return send({ reply: { 'client-release': { 'query.json': { responses: [{ error: '请求版本不支持' }] } } } });
         return file(decodeURIComponent(url.pathname.slice('/build/reply/'.length)));
